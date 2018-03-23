@@ -14,13 +14,22 @@ app.get('/api/hello', (req, res) => {
 
 app.get('/api/aws-serverless-js', (req, res) => {
   request('https://fp55uw8uu8.execute-api.us-east-1.amazonaws.com/dev/', function (error, response, body) {
-    console.log('error:', error); // Print the error if one occurred
-    console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-    console.log('body:', body); // Print the HTML for the Google homepage.
-  	res.send(body);
+  	if(error || response.statusCode !== 200) {
+  	  res.json({'color': 'yellow'});
+  	} else {
+  	  res.send(body);
+  	}
   });
-  // https://fp55uw8uu8.execute-api.us-east-1.amazonaws.com/dev/
-  // res.send({ test: 'Hello From Express' });
+});
+
+app.get('/api/heroku-clojure', (req, res) => {
+  request('https://all-the-clouds-heroku-clojure.herokuapp.com', function (error, response, body) {
+  	if(error || response.statusCode !== 200) {
+  	  res.json({'color': 'yellow'});
+  	} else {
+  	  res.send(body);
+  	}
+  });
 });
 
 // The "catchall" handler: for any request that doesn't

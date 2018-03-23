@@ -5,13 +5,15 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  state = {
-    color: ''
+  state = {   
+    awsServerlessJs: {
+      color: ''
+    }
   };
 
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ color: res.color }))
+      .then(res => this.setState({ awsServerlessJs: res }))
       .catch(err => console.log(err));
   }
 
@@ -31,7 +33,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">{this.state.color}</p>
+        <p className="App-intro">aws-serverless-js: {this.state.awsServerlessJs.color}</p>
       </div>
     );
   }
