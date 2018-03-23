@@ -32,7 +32,7 @@ export class Cloud extends Component {
   getApi = () => {
     Api.getApi(this.props.api).then(res => {
       console.log(res);
-      this.setState({status: res.test});
+      this.setState({status: res.color});
     });
   };
   render() {

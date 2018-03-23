@@ -14,10 +14,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Cloud name="AWS" api='/api/aws-serverless-js' />
-        <Cloud name="Heroku" api='/test.json' />
-        <Cloud name="azure" api='/test.json' />
-        <Cloud name="Google Cloud" api='/test.json' />
+        <Cloud name="aws-serverless-js" api='/api/aws-serverless-js' />
+        <Cloud name="heroku-clojure" api='/api/heroku-clojure' />
+        <Cloud name="gcp-python" api='/api/gcp-python' />
+        <Cloud name="azure-dotnet" api='/api/azure-dotnet' />
+        <Cloud name="openshift-ruby" api='/api/openshift-ruby' />
       </div>
     );
   }
