@@ -32,6 +32,38 @@ app.get('/api/heroku-clojure', (req, res) => {
   });
 });
 
+app.get('/api/gcp-python', (req, res) => {
+  request('http://all-the-clouds-gcp-python.appspot.com', function (error, response, body) {
+  	if(error || response.statusCode !== 200) {
+  	  res.json({'color': 'yellow'});
+  	} else {
+  	  res.send(body);
+  	}
+  });
+});
+
+app.get('/api/azure-dotnet', (req, res) => {
+  request('https://all-the-clouds-azure-dotnet.azurewebsites.net/api/values/1', function (error, response, body) {
+  	if(error || response.statusCode !== 200) {
+  	  res.json({'color': 'yellow'});
+  	} else {
+  	  res.send(body);
+  	}
+  });
+});
+
+app.get('/api/openshift-ruby', (req, res) => {
+  request('http://openshift-ruby-demo-all-the-clouds-openshift-ruby.7e14.starter-us-west-2.openshiftapps.com', function (error, response, body) {
+  	if(error || response.statusCode !== 200) {
+  	  res.json({'color': 'yellow'});
+  	} else {
+  	  res.send(body);
+  	}
+  });
+});
+
+
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
