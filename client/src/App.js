@@ -6,12 +6,12 @@ import './App.css';
 
 class App extends Component {
   state = {
-    test: ''
+    color: ''
   };
 
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ test: res.test }))
+      .then(res => this.setState({ color: res.color }))
       .catch(err => console.log(err));
   }
 
@@ -31,7 +31,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">{this.state.test}</p>
+        <p className="App-intro">{this.state.color}</p>
       </div>
     );
   }
