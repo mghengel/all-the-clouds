@@ -7,7 +7,7 @@ export class Cloud extends Component {
     super(props);
     this.state = {
       stopStart: true,
-      status: 'Loading'
+      color: 'white'
     }
     this.timer = null;
   }
@@ -34,15 +34,15 @@ export class Cloud extends Component {
       .then(res => {
         console.log(res);
         if(res) {
-          this.setState({status: res.color});
+          this.setState({color: res.color});
         } else {
-          this.setState({status: 'green'});
+          this.setState({color: 'green'});
         }
       })
   };
   render() {
     return (
-      <div>{this.props.name}: <span onClick={this.stopStart}>{this.state.status} {this.state.stopStart ? `Stop` : `Start`}</span></div>
+      <div>{this.props.name}: <span onClick={this.stopStart}>{this.state.color} {this.state.stopStart ? `Stop` : `Start`}</span></div>
     );
   }
 }
