@@ -5,15 +5,6 @@ export class UserApi {
   constructor(rootApi) {
     this.api = rootApi;
   }
-  getAws = () => {
-    return this.api
-      .get('/test.json', {
-        headers: new Headers({
-          'Content-Type': 'application/json'
-        })
-      })
-      .then(res => res.json());
-  };
   getApi = (route) => {
     return this.api
       .get(route, {
