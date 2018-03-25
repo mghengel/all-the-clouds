@@ -14,6 +14,12 @@ export class Cloud extends Component {
   componentDidMount() {
     this.startTimer();
   }
+  getImagePath() {
+    return 'img/' + this.props.name + '.png';
+  }
+  getImageClass() {
+    return 'img-fluid ' + this.state.color;
+  }
   componentWillUnmount() {
     clearInterval(this.timer);
   }
@@ -42,7 +48,7 @@ export class Cloud extends Component {
   };
   render() {
     return (
-      <div>{this.props.name}: <span onClick={this.stopStart}>{this.state.color} {this.state.stopStart ? `Stop` : `Start`}</span></div>
+      <img class={this.getImageClass()} src={this.getImagePath()}/>
     );
   }
 }
