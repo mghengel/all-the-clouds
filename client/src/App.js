@@ -16,6 +16,7 @@ class App extends Component {
         <section class="portfolio" id="portfolio">
           <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">All the clouds</h2>
+            <hr class="mb-5"/>
             <div class="row">
               <div class="col-md-6 col-lg-4">
                 <a class="portfolio-item d-block mx-auto">
