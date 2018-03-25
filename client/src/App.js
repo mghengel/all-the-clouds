@@ -12,12 +12,14 @@ class App extends Component {
         <Cloud name="gcp-python" api='/api/gcp-python' />
         <Cloud name="azure-dotnet" api='/api/azure-dotnet' />
         <Cloud name="openshift-ruby" api='/api/openshift-ruby' />
+        <Cloud name="cf-java" api='/api/cf-java' />
         
         <style>{'.aws-serverless-js { background-color: lightgrey; }'}</style>
         <style>{'.heroku-clojure { background-color: lightgrey; }'}</style>
         <style>{'.gcp-python { background-color: lightgrey; }'}</style>
         <style>{'.azure-dotnet { background-color: lightgrey; }'}</style>
         <style>{'.openshift-ruby { background-color: lightgrey; }'}</style>
+        <style>{'.cf-java { background-color: lightgrey; }'}</style>
 
         <section class="portfolio" id="portfolio">
           <div class="container">
@@ -47,6 +49,11 @@ class App extends Component {
               <div class="col-md-6 col-lg-4">
                 <a class="portfolio-item d-block mx-auto">
                   <img class="openshift-ruby img-fluid" src="img/openshift-ruby.png" alt="" />
+                </a>
+              </div>              
+              <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto">
+                  <img class="cf-java img-fluid" src="img/cf-java.png" alt="" />
                 </a>
               </div>
             </div>

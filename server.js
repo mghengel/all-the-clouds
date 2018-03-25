@@ -42,6 +42,10 @@ app.get('/api/openshift-ruby', (req, res) => {
   callApi('http://openshift-ruby-demo-all-the-clouds-openshift-ruby.7e14.starter-us-west-2.openshiftapps.com', res);
 });
 
+app.get('/api/cf-java', (req, res) => {
+  callApi('https://all-the-clouds-cf-java.cfapps.io', res);
+});
+
 
 
 // The "catchall" handler: for any request that doesn't
