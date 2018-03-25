@@ -30,10 +30,15 @@ export class Cloud extends Component {
     this.setState({ stopStart: !this.state.stopStart });
   };
   getApi = () => {
-    Api.getApi(this.props.api).then(res => {
-      console.log(res);
-      this.setState({status: res.color});
-    });
+    Api.getApi(this.props.api)
+      .then(res => {
+        console.log(res);
+        if(res) {
+          this.setState({status: res.color});
+        } else {
+          this.setState({status: 'green'});
+        }
+      })
   };
   render() {
     return (
