@@ -5,7 +5,7 @@ This project was built with `create-react-app` and has a Node Express backend to
 
 ## Backend Microservices
 #### (AWS/Javascript)[https://github.com/travnels/all-the-clouds-aws-serverless-js]
-![AWS/Javascript](./client/public/img/aws-serverless-js.png "AWS/Javascript")
+![AWS/Javascript](./client/public/img/aws-serverless-js-small.png "AWS/Javascript")
 - Deployed on AWS Lambda
 - Written in Javascript
 - Serverless framework
@@ -13,35 +13,35 @@ This project was built with `create-react-app` and has a Node Express backend to
 - [Endpoint](https://fp55uw8uu8.execute-api.us-east-1.amazonaws.com/dev)
 
 #### (Heroku/Clojure)[https://github.com/travnels/all-the-clouds-heroku-clojure]
-![Heroku/Clojure](./client/public/img/heroku-clojure.png "Heroku/Clojure")
+![Heroku/Clojure](./client/public/img/heroku-clojure-small.png "Heroku/Clojure")
 - Deployed on Heroku
 - Written in Clojure
 - CD with Heroku
 - [Endpoint](https://all-the-clouds-heroku-clojure.herokuapp.com)
 
 #### (OpenShift/Ruby)[https://github.com/travnels/all-the-clouds-openshift-ruby]
-![openshift-ruby](./client/public/img/openshift-ruby.png "openshift-ruby")
+![openshift-ruby](./client/public/img/openshift-ruby-small.png "openshift-ruby")
 - Deployed on OpenShift
 - Written in Ruby
 - CD with OpenShift
 - [Endpoint](http://openshift-ruby-demo-all-the-clouds-openshift-ruby.7e14.starter-us-west-2.openshiftapps.com)
 
 #### (Google Cloud Platform/Python)[https://github.com/travnels/all-the-clouds-gcp-python]
-![gcp-python](./client/public/img/gcp-python.png "gcp-python")
+![gcp-python](./client/public/img/gcp-python-small.png "gcp-python")
 - Deployed on Google Cloud Platform
 - Written in Python
 - CD with Google Cloud Platform
 - [Endpoint](http://all-the-clouds-gcp-python.appspot.com)
 
 #### (Azure/C#)[https://github.com/travnels/all-the-clouds-azure-dotnet]
-![azure-dotnet](./client/public/img/azure-dotnet.png "azure-dotnet")
+![azure-dotnet](./client/public/img/azure-dotnet-small.png "azure-dotnet")
 - Deployed on Azure
 - Written in C#
 - CD with Azure
 - [Endpoint](https://all-the-clouds-azure-dotnet.azurewebsites.net/api/values/1)
 
 #### (Cloud Foundry/Java)[https://github.com/travnels/all-the-clouds-cf-java]
-![cf-java](./client/public/img/cf-java.png "cf-java")
+![cf-java](./client/public/img/cf-java-small.png "cf-java")
 - Deployed on Cloud Foundry
 - Written in Java
 - CD with CircleCI using the Cloud Foundry CLI
