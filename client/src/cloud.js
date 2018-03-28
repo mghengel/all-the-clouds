@@ -7,7 +7,7 @@ export class Cloud extends Component {
     super(props);
     this.state = {
       stopStart: true,
-      color: 'white'
+      color: 'black'
     }
     this.timer = null;
   }
@@ -39,10 +39,10 @@ export class Cloud extends Component {
     Api.getApi(this.props.api)
       .then(res => {
         console.log(res);
-        if(res) {
+        if(res && res.color) {
           this.setState({color: res.color});
         } else {
-          this.setState({color: 'green'});
+          this.setState({color: 'red'}); //error color
         }
       })
   };
